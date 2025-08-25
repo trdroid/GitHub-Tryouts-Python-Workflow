@@ -1,0 +1,17 @@
+name: Python Workflow
+on: [workflow_dispatch]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Check out the repository
+              uses: actions/checkout@v5.0.0
+            - name: Set up Python
+              uses: actions/setup-python@v5.6.0
+              with:
+                python-version: '3.12.10'
+            - name: Run Python script
+              run: python script.py
+            
+    
