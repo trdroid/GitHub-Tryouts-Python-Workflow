@@ -8,9 +8,9 @@ user_data = {
     "email": "james_gosling@oracle.com",    
 }
 
-json_output = json.dumps(user_data, indent=4)
+user_data["requests"] = f"{requests}"
+user_data["rich_argparse"] = f"{rich_argparse}"
 
-print(f"requests: {requests}")
-print(f"rich_argparse: {rich_argparse}")
+json_output = json.dumps(user_data, indent=4)
 
 print(json_output)
