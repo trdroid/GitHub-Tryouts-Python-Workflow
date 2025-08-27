@@ -20,7 +20,7 @@ jobs:
                 echo "pip version used is: $(pip --version)"
               
             - name: Install pipx
-              run: python -m pip install pipx --user                
+              run: python -m pip install pipx --user
 
             - name: Ensure pipx is in the PATH Environment Variable
               run: |
@@ -32,16 +32,8 @@ jobs:
                 pipx install poetry
                 echo "poetry version used is: $(poetry --version)"
 
-            - name: Install poetry shell
-              run: |
-                pipx inject poetry poetry-plugin-shell
-                echo "poetry plugins used are: \n$(poetry self show plugins)"
-
-            - name: Activate the project's virtual environment
-              run: poetry shell
-
             - name: Install project dependencies
-              run: poetry install
+              run: poetry run install
 
             - name: Run Python script
               run: python script.py
