@@ -36,6 +36,6 @@ jobs:
               run: poetry install
 
             - name: Run Python script
-              run: python script.py
+              run: poetry run script.py
             
     
