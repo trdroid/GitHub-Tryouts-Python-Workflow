@@ -13,7 +13,6 @@ jobs:
               uses: actions/setup-python@v5.6.0
               with:
                 python-version: '3.12.10'
-                cache: 'poetry'
 
             - name: Install and/or Upgrade pip
               run: |
