@@ -34,6 +34,5 @@ jobs:
               run: poetry install
 
             - name: Run Python script
-              run: poetry run python script.py
-            
+              run: poetry run python script.py "$(secrets.CLIENT_ID)" "$(secrets.CLIENT_SECRET)"
     
