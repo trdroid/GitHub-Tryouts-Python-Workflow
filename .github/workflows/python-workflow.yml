@@ -33,7 +33,7 @@ jobs:
                 echo "poetry version used is: $(poetry --version)"
 
             - name: Install project dependencies
-              run: poetry run install
+              run: poetry install
 
             - name: Run Python script
               run: python script.py
