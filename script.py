@@ -30,8 +30,5 @@ print(json_output)
 print(f"client_id: {client_id}")
 print(f"client_secret: {client_secret}")
 
-# comp_value1 = (client_id == "client_id_value")
-# comp_value2 = (client_secret == "client_secret_value")
-
 print(f"client_id == 'client_id_value' is {client_id == 'client_id_value'}")
 print(f"client_secret == 'client_secret_value' is {client_secret == 'client_secret_value'}")

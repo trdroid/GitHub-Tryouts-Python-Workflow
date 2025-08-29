@@ -4,6 +4,7 @@ on:
 
 jobs:
     run_python_script:
+        environment: NonProd
         runs-on: self-hosted
         steps:
             - name: Check out the repository
