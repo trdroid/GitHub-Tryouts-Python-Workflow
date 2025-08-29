@@ -32,3 +32,6 @@ print(f"client_secret: {client_secret}")
 
 print(f"client_id == 'client_id_value' is {client_id == 'client_id_value'}")
 print(f"client_secret == 'client_secret_value' is {client_secret == 'client_secret_value'}")
+
+print(f"client_id == 'non_prod_client_id_value' is {client_id == 'non_prod_client_id_value'}")
+print(f"client_secret == 'non_prod_client_secret_value' is {client_secret == 'non_prod_client_secret_value'}")
