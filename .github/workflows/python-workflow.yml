@@ -40,5 +40,5 @@ jobs:
                 echo "client_secret is ${{ secrets.CLIENT_SECRET }}"
 
             - name: Run Python script
-              run: poetry run python script.py --client-id "${{ secrets.CLIENT_ID }}" --client-secret "${{ secrets.CLIENT_SECRET }}"
+              run: poetry run python script.py --client-id "${{ secrets.CLIENT_ID }}" --client-secret "${{ secrets.CLIENT_SECRET }}" --env-one "${{ vars.ENV_VAL_ONE }}" --env-two "${{ vars.ENV_VAL_TWO }}"
     
