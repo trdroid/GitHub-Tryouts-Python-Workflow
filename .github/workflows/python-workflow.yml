@@ -1,10 +1,15 @@
 name: Python Workflow
 on:
-    workflow_dispatch:    
+    workflow_dispatch:
+      inputs:
+        environment:
+          description: 'The environment to run the workflow for'
+          type: environment
+          required: true
 
 jobs:
     run_python_script:
-        environment: NonProd
+        environment: ${{ inputs.environment }}
         runs-on: self-hosted
         steps:
             - name: Check out the repository
